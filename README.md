@@ -1,21 +1,53 @@
-# HBV202GAssignment5
-A very simple implementation of a stack for storinger integer numbers to be tested using JUnit4.
+# Simple Stack Implementation for Integer Numbers
 
-This project is a Maven project, i.e. it uses the standard Maven project structure that your IDE hopefully understands when you `git clone` it. The provided Maven POM includes the JUnit4 dependency.
+This is a Maven project that provides a simple implementation of a stack for storing integer numbers, along with some
+sample usage and JUnit4 test cases.
 
-Both the implementation and the tests are in Java package `is.hi.hbv202g.ass5`, 
-but in the usual separate Maven `src` directories:
+# Project Structure
 
-- `src/main/java`:
-  - `IntStack.java`: Implementation of a simple stack.
-  - `IntStackMain.java`: A class with a main method demonstrating some sample usage of the stack.
+The project follows the standard Maven project structure, which is as follows:
 
-- `src/test/java`:
-  - `IntStackTest.java`: A skeleton for a class containing JUnit4 test cases for the `IntStack` class, containing one sample test case.
+- `src/main/java`: Contains the implementation of a simple stack and a ´main´ method for demonstrating some simple
+  usage.
+    - `IntStack.java`: Implementation of a simple stack.
+    - `IntStackMain.java`: A class with a main method demonstrating some sample usage of the stack.
 
-Maven:
+- `src/test/java`: Contains the JUnit4 test cases for the simple stack implementation
+    - `IntStackTest.java`: A skeleton for a class containing JUnit4 test cases for the `IntStack` class, containing one
+      sample test case.
 
-- `mvn compile` compiles all implementation classes.
-- `mvn exec:java` executes the main method of the implementation.
-- `mvn test` runs all test cases (i.e. all classes with a name that either starts with `Test` or ends with `Test`, `Tests`, or `TestCase`).
+# Maven Commands
+
+The following Maven commands are available for this project:
+
+- `mvn compile`: Compiles all implementation classes.
+- `mvn exec:java`: Executes the main method of the implementation.
+- `mvn test`: Runs all test cases (i.e. all classes with a name that either starts with `Test` or ends with `Test`
+  , `Tests`, or `TestCase`).
+
+# Running the Project
+
+To run the simple usage of the stack implementation execute the following command:
+
+`mvn exec:java`
+
+# Testing the project
+
+To run the JUnit$ test caases for stack implementation, execute the following command:
+
+`mvn test`
+
+# License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+# Additional Information
+
+- Maven supports executing the `main` method of the implementation using the `exec:java command. This is useful for
+  testing the implementation manually.
+- The JUnit4 test cases are located in the `src/test/java` directory and are automatically executed when running
+  the `maven test` command.
+- The `IntStackTest.java` file contains a skeleton for a class containing the JUnit4 test cases for the IntStack class.
+  You can add more test cases to this class to test your implementation further.
+
 
