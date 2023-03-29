@@ -33,13 +33,17 @@ To run the simple usage of the stack implementation execute the following comman
 
 # Testing the project
 
-To run the JUnit$ test caases for stack implementation, execute the following command:
+To run the JUnit4 test cases for stack implementation, execute the following command:
 
 `mvn test`
 
 # License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+# Design
+
+See [Design](path/to/design.md) for details about the design.
 
 # Additional Information
 
